@@ -21,3 +21,4 @@ if __name__ == "__main__":
     for my_word in my_words:
         my_result = classify(my_word)
         print(my_result)
+        # print(help(print))
