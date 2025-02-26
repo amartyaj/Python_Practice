@@ -5,6 +5,7 @@ def clean_up(*args):
     pass
     # print(args[0])
     # print(args[1])
+    my_amount = args[0]
     my_coins = list(args[1])
     # print(my_coins)
     my_coins.sort()
@@ -12,6 +13,8 @@ def clean_up(*args):
     my_coins = list(set(my_coins))
     # print(my_coins)
     my_coins.reverse()
+    # print(my_coins)
+    my_coins = [x for x in my_coins if x <= my_amount]
     # print(my_coins)
     result = my_coins
     return result
